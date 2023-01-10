@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 0------575 px */
+      /* @media (max-width: 575px) {
+        h2 {
+          background-color: aqua;
+        }
+      } */
+
+      /* 1. overriding */
+
+      /* 575px ---- infinity 
+      @media (min-width: 576px) {
+        h2 {
+          background-color: coral;
+        }
+      }
+
+      /* 991px ----- infinity  */
+      /* 
+      @media (min-width: 991px) {
+        h2 {
+          background-color: blue;
+        }
+      }  */
+
+      /* 2. interrupting */
+
+      /* @media (min-width: 576px) and (max-width: 768px) {
+        h2 {
+          background-color: coral;
+        }
+      } */
+
+      h2 {
+        margin: 0;
+      }
+
+      /* .title {
+        font-size: 46px;
+        font-family: sans-serif;
+        font-weight: 500;
+      } */
+
+      /* 575px ---- infinity */
+
+      /* @media (min-width: 575px) {
+        .title {
+          font-size: 110px;
+          font-weight: 700;
+        }
+      } */
+
+      /* 0------575 px */
+      /* @media (max-width: 575px) {
+        h2 {
+          text-align: center;
+        }
+      } */
+
+      /* @media (min-width: 576px) {
+        .title {
+          text-align: right;
+        }
+      }
+      @media (min-width: 768px) {
+        .title2 {
+          text-align: center;
+        }
+      }
+      @media (min-width: 998px) {
+        .title1,
+        .title {
+          text-align: center;
+        }
+      } */
+
+      /* Utility classes */
+
+      .text-center {
+        text-align: center;
+      }
+
+      .text-right {
+        text-align: right;
+      }
+      .text-left {
+        text-align: left;
+      }
+
+      /* 576px ------ infinity  (sm) */
+      @media screen and (min-width: 576px) {
+        .text-sm-center {
+          text-align: center;
+        }
+        .text-sm-right {
+          text-align: right;
+        }
+        .text-sm-left {
+          text-align: left;
+        }
+      }
+
+      /* 768px ------ infinity  */
+      @media screen and (min-width: 768px) {
+        .text-md-center {
+          text-align: center;
+        }
+        .text-md-right {
+          text-align: right;
+        }
+        .text-md-left {
+          text-align: left;
+        }
+      }
+
+      /* 992px ------ infinity  */
+      @media screen and (min-width: 992px) {
+        .text-lg-center {
+          text-align: center;
+        }
+        .text-lg-right {
+          text-align: right;
+        }
+        .text-lg-left {
+          text-align: left;
+        }
+      }
+
+      /* 1200px ------ infinity  */
+      @media screen and (min-width: 1200px) {
+        .text-xl-center {
+          text-align: center;
+        }
+        .text-xl-right {
+          text-align: right;
+        }
+        .text-xl-left {
+          text-align: left;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h2 class="text-center">First title</h2>
+    <h2 class="text-right text-sm-center">Awesome title</h2>
+    <h2 class="text-md-right text-lg-center">Third title</h2>
+    <p class="text-center text-md-left">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, adipisci
+      rem? Quia iste minus explicabo quisquam voluptatibus sequi aspernatur qui
+      cum, eaque facilis similique numquam deserunt? Deserunt, cupiditate culpa?
+      Animi.
+    </p>
+  </body>
+</html>
